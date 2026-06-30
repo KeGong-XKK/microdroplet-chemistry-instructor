@@ -1,0 +1,19 @@
+# OPTIONAL — semantic search upgrade.
+#
+# Install only if you want to enable BGE-M3 vector retrieval on top of the
+# default keyword-based search. The benefit is typically 5-15% recall
+# improvement on paraphrased / cross-lingual queries; the cost is a 2 GB
+# torch install plus a 2.3 GB model download on first build_index.py run.
+#
+# Most users on this corpus can skip this — keyword mode already lands
+# 8/12 top-score hits on standard chemistry queries like "CO2 reduction
+# water microdroplets".
+#
+# Usage:
+#   pip install -r requirements.txt              # always
+#   pip install -r requirements-semantic.txt     # only if you want semantic
+#   python scripts/build_index.py                # only after semantic install
+
+torch>=2.0
+sentence-transformers>=2.7
+faiss-cpu>=1.7.4

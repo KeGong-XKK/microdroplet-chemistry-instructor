@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m tools.search:*)",
+      "Bash(python -m tools.filter:*)",
+      "Bash(python -m tools.combine:*)",
+      "Bash(python -m tools.cite:*)",
+      "Bash(python -m tools.build_model:*)",
+      "Bash(python -m tools.write_input:*)",
+      "Bash(python scripts/merge_datasets.py)",
+      "Bash(python scripts/build_index.py)",
+      "Read(./data/**)",
+      "Read(./tools/**)",
+      "Read(./scripts/**)",
+      "Read(./examples/**)",
+      "Read(./models/**)",
+      "Read(./inputs/**)",
+      "Write(./models/**)",
+      "Write(./inputs/**)"
+    ]
+  }
+}

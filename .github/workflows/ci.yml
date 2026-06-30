@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    name: smoke test (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.11', '3.12']
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install core dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Sanity-check unified_corpus.parquet is present
+        run: |
+          test -s data/unified_corpus.parquet || (
+            echo "ERROR: data/unified_corpus.parquet not in repo." \
+            "If you removed it from .gitignore by accident, restore it; " \
+            "if you intentionally moved to external data distribution, " \
+            "update tests/smoke_test.sh and this workflow to fetch it." ; \
+            exit 1
+          )
+
+      - name: Run smoke test
+        run: bash tests/smoke_test.sh
+
+      - name: Syntax-check all Python files
+        run: |
+          python -m compileall -q tools scripts

@@ -1,0 +1,238 @@
+{
+  "n_hits": 20,
+  "n_papers": 20,
+  "droplet_type": [
+    [
+      "Water microdroplets",
+      2
+    ],
+    [
+      "水微液滴 (Water microdroplets)",
+      2
+    ],
+    [
+      "aqueous water microdroplets",
+      1
+    ],
+    [
+      "带负电荷的水微液滴 (negatively charged aqueous microdroplets)",
+      1
+    ],
+    [
+      "水微滴",
+      1
+    ]
+  ],
+  "droplet_generation_method": [
+    [
+      "Unknown",
+      2
+    ],
+    [
+      "spraying water solutions into microdroplets",
+      1
+    ],
+    [
+      "气动雾化 (Nebulized spray, 使用CO2, N2, O2或压缩空气作为鞘气)",
+      1
+    ],
+    [
+      "喷雾 (spraying)",
+      1
+    ],
+    [
+      "纳升电喷雾电离（nanoelectrospray ionization, nESI）、感应纳升电喷雾电离（inductive nESI）",
+      1
+    ]
+  ],
+  "solvent_or_medium": [
+    [
+      "Water",
+      4
+    ],
+    [
+      "水 (Water)",
+      2
+    ],
+    [
+      "水 (Water / Aqueous)",
+      1
+    ],
+    [
+      "水",
+      1
+    ],
+    [
+      "纯水（pure water）、重水（D2O）、含15% H2O2的水溶液、乙腈（含微量水）",
+      1
+    ]
+  ],
+  "reactants": [
+    {
+      "value": "CO2",
+      "count": 7,
+      "example_rows": [
+        "Deepseek_00498",
+        "Deepseek_00509",
+        "Qwen_00131",
+        "Gemini_00145",
+        "Qwen_00202"
+      ]
+    },
+    {
+      "value": "二氧化碳",
+      "count": 3,
+      "example_rows": [
+        "Gemini_00167",
+        "Qwen_00108",
+        "Gemini_00106"
+      ]
+    },
+    {
+      "value": "H2O",
+      "count": 2,
+      "example_rows": [
+        "Qwen_00131",
+        "Gemini_00145"
+      ]
+    },
+    {
+      "value": "Au/TiO2",
+      "count": 2,
+      "example_rows": [
+        "Qwen_00131",
+        "Qwen_00202"
+      ]
+    },
+    {
+      "value": "'H2O'",
+      "count": 2,
+      "example_rows": [
+        "Qwen_00484",
+        "Qwen_00469"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "value": "甲酸",
+      "count": 2,
+      "example_rows": [
+        "Qwen_00108",
+        "Qwen_00202"
+      ]
+    },
+    {
+      "value": "Formic acid",
+      "count": 1,
+      "example_rows": [
+        "Deepseek_00498"
+      ]
+    },
+    {
+      "value": "['Fe'",
+      "count": 1,
+      "example_rows": [
+        "Qwen_00500"
+      ]
+    },
+    {
+      "value": "'Cu']",
+      "count": 1,
+      "example_rows": [
+        "Qwen_00500"
+      ]
+    },
+    {
+      "value": "甲酸根 (formate",
+      "count": 1,
+      "example_rows": [
+        "Gemini_00167"
+      ]
+    }
+  ],
+  "mechanism_claims": [
+    [
+      "Deepseek_00498",
+      "OH- spontaneously donates electrons for CO2 hydrogenation, driven by strong electric field at microdroplet interfaces; Cu ions undergo valence alternation to deposit electrons and promote formate conversion."
+    ],
+    [
+      "Qwen_00500",
+      "spontaneously generated electrons in water microdroplets drive reduction; O2, CO2, and NO2 compete for these electrons forming O2-, HCO2-, and NO2- respectively"
+    ],
+    [
+      "Gemini_00167",
+      "碳酸氢根优先吸附在液滴表面形成双电层，强电场驱动电子从碳酸氢根转移到溶解的CO2，生成CO2自由基阴离子 (·CO2-) 或羟基自由基 (·OH)，随后通过一系列自由基链式反应生成甲酸、乙二醇、乙酸和甲烷。此外，气相CO2也可在气液界面与·OH反应。"
+    ],
+    [
+      "Gemini_00497",
+      "通过酮的α-碳生成碳负离子，随后对CO2发生亲核加成 (carbanion generation at the α-carbon of a ketone followed by nucleophilic addition to CO2)"
+    ],
+    [
+      "Deepseek_00509",
+      "水微滴自发产生电子，将C6F5I还原为自由基阴离子C6F5I•-，电子位于C-I键σ*反键轨道，削弱C-I键生成C6F5-，后者进攻CO2的碳原子生成C6F5CO2-"
+    ],
+    [
+      "Qwen_00108",
+      "水分子在微液滴表面强电场作用下解离为水自由基阳离子/阴离子对（water radical cation/anion pair）。由于极性相反，这些自由离子在液滴表面分离并积累形成双层结构（double-layer structure）。外层富集水自由基阳离子，提供强氧化能力将膦酸酯氧化；内层积累水自由基阴离子（水合电子），提供强还原能力将膦酸酯还原并还原CO2。"
+    ],
+    [
+      "Qwen_00131",
+      "1. 高比表面积(S/V)促进CO2向催化剂表面的高效传质；2. 微液滴气液界面存在固有的强电场，该电场有效促进了光生电子-空穴对的分离，抑制了电荷复合，是反应加速的本质原因。"
+    ],
+    [
+      "Gemini_00106",
+      "推测Tz在气液界面(GLI)提供质子和氢氧根(OH-)，通过逐步电子转移将气相CO2还原为甲酸。Tz的2H是质子给体，自由电子可能来源于OH-、Tz阴离子甚至氢化物(H-)。"
+    ],
+    [
+      "Deepseek_00342",
+      "Partial solvation, possible gas phase channels, presence of highly reactive intermediates, role of droplet charge and associated electric fields"
+    ],
+    [
+      "Gemini_00145",
+      "带电液滴气液界面的高电场以及带相反电荷的水微液滴之间的微闪电（microlightning）诱导放电，导致 O-O 键断裂，生成多种 ROS。生成的 O- 或 O3- 进一步与水或空气中的 CO2 反应生成 ·OH、CO3- 和 HCO4- 等。"
+    ]
+  ],
+  "key_findings_excerpts": [
+    [
+      "Deepseek_00498",
+      "This work demonstrates that in water microdroplets, OH- can spontaneously donate electrons for CO2 hydrogenation to formic acid, driven by strong electric fields at interfaces. Cu ions increase formate output by 4000 times. The study implies microdroplets could have enabled nonen"
+    ],
+    [
+      "Qwen_00500",
+      "This study demonstrates that water microdroplets enable spontaneous one-electron reduction of ligated Fe(III) and Cu(II) to Fe(II) and Cu(I) via interfacially generated electrons — a process absent in bulk water. Competing gases (O2, CO2, NO2) intercept these electrons, revealing"
+    ],
+    [
+      "Gemini_00167",
+      "本文利用简单的气动雾化装置，研究了水微液滴中CO2的无催化剂转化。通过NMR和质谱证实了甲酸、乙酸、乙二醇和甲烷的生成。研究提出微液滴表面的双电层和界面自由基反应是驱动这一热力学上在体相难以发生的还原反应的关键机制。"
+    ],
+    [
+      "Gemini_00497",
+      "该论文报道了一种在带负电荷的水微液滴气液界面处发生的无催化剂、室温下酮类自发α-C-H羧基化反应。利用在线质谱和理论计算，研究证实了反应通过碳负离子中间体和亲核加成生成β-酮酸，并揭示了微液滴中的水环境对该过程的促进作用。此方法为CO2还原与碳碳键形成提供了绿色新策略。"
+    ],
+    [
+      "Deepseek_00509",
+      "本研究设计了一种无催化剂策略，利用水微滴的强还原性将C6F5I还原为C6F5-，进而与CO2反应生成五氟苯甲酸根。通过阴离子光电子能谱证实了自由基阴离子的存在和电子分布。该工作展示了微滴化学在CO2利用中的绿色新途径。"
+    ],
+    [
+      "Qwen_00108",
+      "本文研究了微液滴中膦酸酯的自发氧化还原反应。通过nESI-MS分析，发现水微液滴和含微量水的乙腈微液滴中能同时发生膦酸酯的氧化（生成五价磷酸）和还原（生成膦酸），以及CO2还原为甲酸。研究表明，微液滴表面的强电场促使水分子解离为水自由基阳离子和阴离子，并形成双层结构，外层富集氧化性阳离子，内层富集还原性阴离子，从而实现了同时的氧化还原反应。"
+    ],
+    [
+      "Qwen_00131",
+      "本文研究了微液滴气液界面对光催化CO2还原反应的显著加速作用。利用微液滴打印机生成含催化剂的水相微液滴，在无牺牲剂和紫外光条件下，HCOOH和CH3OH的产率比体相水溶液高出两个数量级。研究结合实验表征与分子动力学模拟，证实除了高比表面积带来的高效CO2传质外，微液滴气液界面的强内建电场有效促进了光生电子-空穴对的分离，是反应加速的根本原因。此外，研究还展示了利用电喷雾器进行规模化生产的潜力。"
+    ],
+    [
+      "Gemini_00106",
+      "本文报道了一种利用同轴声波喷雾产生含1,2,3-三唑(Tz)的水微液滴，在室温下将气相CO2高效还原为甲酸的方法。该反应在气液界面发生，无需外加电压，转化率超80%，反应时间仅300微秒，揭示了微液滴界面特殊的氧化还原特性在碳捕获和转化中的潜力。"
+    ],
+    [
+      "Deepseek_00342",
+      "This perspective reviews how interfaces and charge influence chemical reactivity in microdroplets, highlighting acceleration of reactions, proposed mechanisms, and the importance of electric fields."
+    ],
+    [
+      "Gemini_00145",
+      "本文利用在线质谱技术，首次直接检测到带电水微液滴喷雾中气液界面处氧气自发解离生成的多种活性氧物种（ROS）。研究表明，界面高电场和微闪电诱导的放电促使 O-O 键断裂。通过同位素标记和捕获实验，详细阐明了 O2 转化为 O3-、·OH、CO3- 等物种的机制，为微液滴化学中 ROS 的生成提供了全新视角和无催化剂的绿色途径。"
+    ]
+  ]
+}

@@ -1,0 +1,13 @@
+# Core dependencies — required for keyword-mode search, the experimental-design
+# skill, the interface-calc-builder subagent, and the full tool palette.
+# This is the minimal install; you do NOT need GPU drivers, torch, or 2+ GB of
+# model weights to use the agent. ≈100 MB total install.
+
+pandas>=2.0
+numpy>=1.24
+openpyxl>=3.1
+pyarrow>=14.0
+
+# Chemistry helpers — used by tools/build_model.py SMILES → 3D embedding
+rdkit>=2023.9
+pubchempy>=1.0.4

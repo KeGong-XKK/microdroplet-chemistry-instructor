@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Data outputs — large optional artefacts (regenerable by scripts/build_index.py).
+# unified_corpus.parquet IS committed so users can use the agent immediately;
+# the embedding index is too large for git and is built locally on demand.
+data/embeddings.npy
+data/embeddings.npz
+data/faiss.index
+data/index_meta.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Excel lock files
+~$*.xlsx
+
+# Local Claude Code state
+.claude/cache/
+.claude/sessions/
+
+# HF model cache
+.cache/
+models_cache/
+
+# Test scratch
+tests/.scratch/
